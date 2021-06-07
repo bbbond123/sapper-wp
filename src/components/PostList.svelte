@@ -9,7 +9,6 @@
     const res = await fetch(`${apiURL}/wp/v2/posts`);
     const json = await res.json();
     posts = json;
-    console.log(posts);
   });
 </script>
 
