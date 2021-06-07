@@ -15,6 +15,8 @@
 
 <ul>
   {#each posts as post}
-    <li>{post.title.rendered}</li>
+    <li>
+      <a rel="prefetch" href={`articles/${post.slug}`}>{post.title.rendered}</a>
+    </li>
   {/each}
 </ul>
