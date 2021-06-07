@@ -62,6 +62,36 @@
   {/each}
 </ul>
 
-<style>
-  /* your styles go here */
+<style lang="scss">
+  .pagination,
+  .post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pagination {
+    display: flex;
+    margin-top: 40px;
+
+    li {
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    button {
+      padding: 10px 15px;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+
+      &.active {
+        cursor: pointer;
+        background: #ff3e00;
+        color: "#FFFFFF";
+      }
+    }
+  }
 </style>
