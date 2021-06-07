@@ -18,7 +18,7 @@
   }
 
   function changePage(page) {
-    fetch(`${apiURL}/wp/v2/posts?per_page=${page}`)
+    fetch(`${apiURL}/wp/v2/posts?per_page=5&page=${page}`)
       .then((res) => {
         return res.json();
       })
