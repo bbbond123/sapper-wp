@@ -50,6 +50,7 @@
   {#each pages as page}
     <li>
       <button
+        class={page === currentPage ? "active" : ""}
         on:click={() => {
           changePage(page);
         }}
@@ -88,7 +89,7 @@
       &.active {
         cursor: pointer;
         background: #ff3e00;
-        color: "#FFFFFF";
+        color: #FFFFFF;
       }
     }
   }
