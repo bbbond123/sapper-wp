@@ -34,7 +34,6 @@
 
     totalPages = res.headers.get("X-WP-TotalPages");
     pages = createPagesArray(totalPages);
-    console.log("🚀 ~ file: PostList.svelte ~ line 26 ~ onMount ~ pages", pages);
 
     posts = json;
   });
@@ -52,7 +51,6 @@
     <li>
       <button
         on:click={() => {
-          console.log(page);
           changePage(page);
         }}
       >
