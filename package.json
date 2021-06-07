@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "node-sass": "^6.0.0",
     "polka": "next",
     "sapper-environment": "^1.0.1",
-    "sirv": "^1.0.0"
+    "sirv": "^1.0.0",
+    "svelte-preprocess": "^4.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
